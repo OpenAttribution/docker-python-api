@@ -13,7 +13,7 @@ ENV PATH="/venv/bin:$PATH"
 # Install the requirements
 #RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
-RUN git clone https://github.com/OpenAttribution/open-attribution /open-attribution
+RUN git clone --branch docker https://github.com/OpenAttribution/open-attribution /open-attribution
 
 # Set the working directory
 WORKDIR /open-attribution
