@@ -23,9 +23,9 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir --upgrade -r /open-attribution/requirements.txt
 
 # Expose the port the app runs on
-EXPOSE 80
+EXPOSE 8000
 
 # Run the app with the Litestar CLI
-CMD ["litestar", "run", "--host", "0.0.0.0", "--port", "80"]
+CMD ["litestar", "run", "--host", "0.0.0.0", "--port", "8000"]
 
 
