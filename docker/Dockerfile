@@ -16,7 +16,7 @@ ENV PATH="/venv/bin:$PATH"
 RUN git clone https://github.com/OpenAttribution/open-attribution /open-attribution
 
 # Set the working directory
-WORKDIR ~/open-attribution
+WORKDIR /open-attribution
 
 # Upgrade pip and install required Python packages
 RUN pip install --upgrade pip
